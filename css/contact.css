@@ -1,0 +1,91 @@
+body {
+    overflow: hidden;
+}
+
+.Main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    width: 100%;
+}
+
+.Main a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.Main i {
+    color: #fff;
+    padding-right: 10px;
+}
+
+.item:hover {
+    text-shadow: 0 0 30px #fff;
+    transition: 0.5s ease;
+}
+
+
+/* when u leave the hover */
+
+.item:hover i {
+    color: indianred;
+    transition: 0.5s ease;
+}
+
+.item:hover a {
+    color: indianred;
+    transition: 0.5s ease;
+}
+
+.item:hover p {
+    color: indianred;
+    transition: 0.5s ease;
+}
+
+.active {
+    background-color: #fff;
+    color: #202020;
+}
+
+.active i {
+    background-color: #fff;
+    color: #202020;
+}
+
+.active a {
+    background-color: #fff;
+    color: #202020;
+}
+
+.active:hover {
+    background-color: #fff;
+    box-shadow: 0 0 10px #fff;
+    transition: 1s ease;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .item p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .mail p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .social i {
+        font-size: 20px;
+        margin-right: 5px;
+        color: #fff;
+        text-decoration: none;
+    }
+}
