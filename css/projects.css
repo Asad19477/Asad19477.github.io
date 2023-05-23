@@ -195,7 +195,7 @@ a {
 }
 
 .Project {
-    width: 250px;
+    width: 100%;
     height: 300px;
     border: 1px solid #fff;
     border-radius: 5px;
@@ -203,10 +203,38 @@ a {
     margin: 10px;
     padding: 10px;
     background-color: #505050;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.test{
+    display: flex;
+    /* make it in rows */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding-right: 100px;
+
+
+}
+
+.ImageBox{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ImageBox img{
+    width: auto;
+    height: 50%;
+
 }
 
 .ImageArea {
-    display: flex;
+    /* CSS */   
+    /* display: */
     justify-content: center;
     align-items: center;
     width: 60px;
@@ -215,6 +243,15 @@ a {
     border-radius: 50%;
     padding: 20px;
     background-size: cover;
+    /* make it stick to the top of the div */
+    background-position: top;
+    /* make it stick to the top left of the div */
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    
+    
 }
 
 .header_text {
@@ -229,6 +266,18 @@ a {
     padding-top: 20px;
     color: white;
     text-decoration: none;
+    position: relative;
+    height: 100%;
+}
+
+.text{
+    /* centre it */
+    margin-top: 25% ;
+    
+}
+
+.imgBefore{
+    width: 20%;
 }
 
 .ImageText p {
@@ -239,6 +288,14 @@ a {
     text-decoration: none;
     padding-bottom: 20px;
     margin-top: 20px;
+}
+
+
+.ImageBox {
+    width: 50%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
 }
 
 .Project:nth-child(1) .ImageArea {
@@ -260,7 +317,7 @@ a {
 .Project:hover {
     transform: scale(1.1);
     transition: 0.5s ease;
-    box-shadow: 0 0 20px #fff;
+    box-shadow: 0 0 20px indianred;
 }
 
 .icon {
@@ -299,6 +356,7 @@ a {
     width: 100%;
     position: fixed;
     transition: 2s ease;
+    margin-bottom: 10px;
 }
 
 .footer .social {
@@ -316,7 +374,7 @@ a {
 
 .footer .social a:hover {
     transition: 0.5s ease;
-    color: #000;
+    color: indianred;
     text-shadow: 0 0 20px #fff;
 }
 
